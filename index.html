@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portofolio Saya - Dark Mode Animasi</title>
+
+<style>
+    /* ====== RESET SEDERHANA ====== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease; /* Animasi halus global */
+    }
+
+    body {
+        background: #121212;
+        color: #e0e0e0;
+        line-height: 1.6;
+        padding-bottom: 40px;
+    }
+
+    /* ====== NAVIGATION ====== */
+    nav {
+        width: 100%;
+        background: #1f1f1fcc;
+        backdrop-filter: blur(6px);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #333;
+    }
+
+    nav h1 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #bbb;
+        margin-left: 12px;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        color: #bb86fc;
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+        padding: 40px 20px 20px;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+
+    .hero h2 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .hero p {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    /* ====== SECTION WRAPPER ====== */
+    section {
+        padding: 30px 20px;
+    }
+
+    section h3 {
+        font-size: 18px;
+        margin-bottom: 14px;
+        color: #fff;
+    }
+
+    /* ====== ABOUT ME ====== */
+    .about {
+        background: #1f1f1f;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        font-size: 14px;
+        color: #ddd;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+
+    /* ====== PROJECT LIST ====== */
+    .project {
+        background: #1e1e1e;
+        margin-bottom: 16px;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .project:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    .project h4 {
+        font-size: 16px;
+        margin-bottom: 6px;
+        color: #fff;
+    }
+
+    .project p {
+        font-size: 13px;
+        color: #ccc;
+    }
+
+    /* ====== CONTACT BUTTON ====== */
+    .contact-btn {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        background: #bb86fc;
+        color: #121212;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .contact-btn:hover {
+        background: #9b63e6;
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(187,134,252,0.5);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>Portofolio</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Kontak</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://via.placeholder.com/150" alt="Foto Profil">
+    <h2>Ilham Harun Dwi Mahendra</h2>
+    <p>High School Student in Science Major with a Passion for Electricity and Technology</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h3>Tentang Saya</h3>
+    <div class="about">
+        <p>
+            Saya siswa SMA yang tertarik pada dunia kelistrikan
+            dan kreator digital yang senang membuat desain estetis 
+            serta website responsif. Saya suka belajar hal baru
+            dan menciptakan karya yang fungsional sekaligus
+            menarik secara visual.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h3>Project Terbaru</h3>
+
+    <div class="project">
+        <h4>✨ Mini Panel IoT </h4>
+        <p>Rancang rangkaian dasar & panel IoT dengan microcontroller dan sensor. Fokus pada fungsionalitas dan desain ringkas.</p>
+    </div>
+
+    <div class="project">
+        <h4>📡 Sistem Absensi Online (ESP32) </h4>
+        <p>Membuat sistem absensi online berbasis ESP32 yang memungkinkan pencatatan kehadiran secara real-time. Fokus pada koneksi Wi-Fi, integrasi database sederhana, dan antarmuka responsif.</p>
+    </div>
+
+    <div class="project">
+        <h4>Desain 3D</h4>
+        <p>Memiliki pengalaman dalam pemodelan, teksturing, dan rendering 3D. Terbiasa membuat visualisasi kreatif yang menggabungkan estetika dan fungsi, serta mampu mengolah konsep menjadi desain yang menarik dan detail.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h3>Kontak</h3>
+    <a class="contact-btn" href="https://wa.me/6289654844900" target="_blank">
+        Hubungi via WhatsApp
+    </a>
+</section>
+
+</body>
+</html>
